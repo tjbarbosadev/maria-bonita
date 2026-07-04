@@ -1,0 +1,1 @@
+export { heroCarouselImages } from './carousel';
