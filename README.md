@@ -66,7 +66,7 @@ Pacote gerado com [RealFaviconGenerator](https://realfavicongenerator.net/) em `
 
 Tags inseridas em `index.html` (Open Graph + Twitter Cards + SEO).
 
-Ao publicar, confirme que `og:url` e `og:image` em `index.html` usam o domínio final (atualmente `https://mariabonita.com.br`). Valide em https://realfavicongenerator.net/favicon_checker
+Ao publicar, confirme que `og:url` e `og:image` em `index.html` usam o domínio final (atualmente `https://mariabonitasalao.com.br`). Valide em https://realfavicongenerator.net/favicon_checker
 
 ## Checklist de entrega
 

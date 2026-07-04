@@ -1,3 +1,4 @@
+import { ArabesqueRepeatBackground } from '@/components/ui/ArabesqueRepeatBackground';
 import { LinkButton } from '@/components/ui/Button';
 import { Container } from '@/components/ui/Container';
 import { SectionHeading } from '@/components/ui/SectionHeading';
@@ -15,9 +16,10 @@ export function ServicesSection() {
   return (
     <section
       id="servicos"
-      className="border-y border-gold bg-surface-secondary py-16 sm:py-20"
+      className="relative overflow-hidden border-y border-gold bg-surface-secondary py-16 sm:py-20"
     >
-      <Container>
+      <ArabesqueRepeatBackground />
+      <Container className="relative z-10">
         <SectionHeading
           eyebrow="Serviços"
           title="Tabela de preços"

@@ -3,6 +3,7 @@ import { Clock, ExternalLink, MapPin, MessageCircle } from 'lucide-react';
 import { LinkButton } from '@/components/ui/Button';
 import { Card } from '@/components/ui/Card';
 import { Container } from '@/components/ui/Container';
+import { LocationArabesqueRepeatBackground } from '@/components/ui/LocationArabesqueRepeatBackground';
 import { SectionHeading } from '@/components/ui/SectionHeading';
 import { siteConfig } from '@/data/site';
 import { buildWhatsAppUrl } from '@/lib/utils';
@@ -16,9 +17,10 @@ export function LocationSection() {
   return (
     <section
       id="localizacao"
-      className="border-t border-gold bg-surface-secondary py-16 sm:py-20"
+      className="relative overflow-hidden border-t border-gold bg-surface-secondary py-16 sm:py-20"
     >
-      <Container>
+      <LocationArabesqueRepeatBackground />
+      <Container className="relative z-10">
         <SectionHeading
           eyebrow="Localização"
           title="Vem nos visitar"

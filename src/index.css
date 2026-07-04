@@ -17,6 +17,8 @@
   --accent-rose: #c41e3a;
   --border-gold: rgba(201, 168, 76, 0.35);
   --shadow-soft: 0 10px 40px rgba(0, 0, 0, 0.08);
+  --arabesque-opacity: 0.55;
+  --arabesque-opacity-hero: 0.15;
 }
 
 .dark {
@@ -28,6 +30,8 @@
   --accent-rose: #e63950;
   --border-gold: rgba(212, 175, 55, 0.25);
   --shadow-soft: 0 10px 40px rgba(0, 0, 0, 0.45);
+  --arabesque-opacity: 0.12;
+  --arabesque-opacity-hero: 0.14;
 }
 
 html {
@@ -89,10 +93,18 @@ body {
   box-shadow: var(--shadow-soft);
 }
 
-.sparkle-bg {
+.hero-bg {
   background-image:
     radial-gradient(circle at 20% 20%, rgba(201, 168, 76, 0.08), transparent 35%),
     radial-gradient(circle at 80% 0%, rgba(196, 30, 58, 0.06), transparent 30%);
+}
+
+.arabesque-layer {
+  opacity: var(--arabesque-opacity);
+}
+
+.arabesque-layer-hero {
+  opacity: var(--arabesque-opacity-hero);
 }
 
 .instagram-media {

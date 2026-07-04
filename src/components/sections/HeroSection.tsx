@@ -3,6 +3,7 @@ import { Instagram, MessageCircle, Sparkles } from 'lucide-react';
 import { LinkButton } from '@/components/ui/Button';
 import { Container } from '@/components/ui/Container';
 import { HeroCarousel } from '@/components/ui/HeroCarousel';
+import { HeroRoseRepeatBackground } from '@/components/ui/HeroRoseRepeatBackground';
 import { siteConfig } from '@/data/site';
 import { buildWhatsAppUrl } from '@/lib/utils';
 
@@ -15,10 +16,11 @@ export function HeroSection() {
   return (
     <section
       id="inicio"
-      className="sparkle-bg relative overflow-hidden border-b border-gold py-16 sm:py-24"
+      className="hero-bg relative overflow-hidden border-b border-gold py-16 sm:py-24"
     >
-      <div className="pointer-events-none absolute -top-20 right-0 h-64 w-64 rounded-full bg-[color-mix(in_srgb,var(--accent-rose)_12%,transparent)] blur-3xl" />
-      <Container className="relative grid items-center gap-10 lg:grid-cols-[1.1fr_0.9fr]">
+      <HeroRoseRepeatBackground />
+      <div className="pointer-events-none absolute -top-20 right-0 z-[1] h-64 w-64 rounded-full bg-[color-mix(in_srgb,var(--accent-rose)_12%,transparent)] blur-3xl" />
+      <Container className="relative z-10 grid items-center gap-10 lg:grid-cols-[1.1fr_0.9fr]">
         <div>
           <p className="mb-3 inline-flex items-center gap-2 rounded-full border border-gold px-4 py-1 text-sm text-muted">
             <Sparkles className="h-4 w-4 text-gold" />
